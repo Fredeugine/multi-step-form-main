@@ -57,32 +57,63 @@ body{
     background-image: url("./assets/images/bg-sidebar-desktop.svg");
     background-repeat: no-repeat;
     background-size: 86%;
-    width: 17rem;
+    width: 16rem;
     height: 30rem;
     border-radius: 5px;
-    border: 2px solid red;
+    border: 1px solid red;
 }
 .container_2_1{
     width: 30rem;
     border: 1px solid red;
 }
 .container2_2{
-    width: 30rem;
+    visibility: hidden;
+    width: 33rem;
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: ;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
 }
+.container2_3{
+    visibility: hidden;
+    width: 30rem;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+}
+.float_month{
+    float: right ;
+  }
 #mini_container2_2{
     display: flex;
     flex-direction: column;
-    gap: 11rem;
+    gap: 6.5rem;
 }
-form{
+.form1´{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.form2{
+display: flex;
+    flex-direction: column;
+    gap: 1.5rem ;
+}
+.checkbox_div{
+    border: 1px solid red;
+}
+
+.small_checkbox_div{
+    display: flex;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
 }
 .nav_next{
     float: right;
@@ -96,8 +127,8 @@ section{
 }
 .icons{
     border: 1px solid blue;
-    width: 10rem;
-    height: 12rem;
+    width: 9rem;
+    height: 10rem;
     border-radius: 1rem;
     padding: 1rem;
     display: flex;

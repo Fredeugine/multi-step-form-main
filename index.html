@@ -19,83 +19,93 @@
   <!-- Sidebar start -->
 <div class="main_container">
   <div class="container_1">
-    <div class="div_1">
-      <div class="circle">1</div>
-      <div class="float_right">
-        <span>Step 1</span>
-        <span>Your info</span>
+    <div class="main_div1">
+      <div class="div_1">
+        <button class="circle">1</button>
+        <div class="float_right">
+          <span class="steps">STEP 1</span>
+          <span class="steps_desc">Your info</span>
+        </div>
       </div>
-    </div>
-    <div class="div_1">
-      <div class="circle">2</div>
-      <div class="float_right">
-        <span>Step 2</span>
-        <span>Select plan</span>
+      <div class="div_1">
+        <button class="circle">2</button>
+        <div class="float_right">
+          <span class="steps">Step 2</span>
+          <span class="steps_desc">Select plan</span>
+        </div>
       </div>
-    </div>
-    <div class="div_1">
-      <div class="circle">3</div>
-      <div class="float_right">
-        <span>Step 3</span>
-        <span>Add-ons</span>
+      <div class="div_1">
+        <button class="circle">3</button>
+        <div class="float_right">
+          <span class="steps">Step 3</span>
+          <span class="steps_desc">Add-ons</span>
+        </div>
       </div>
-    </div>
-    <div class="div_1">
-      <div class="circle">4</div>
-      <div class="float_right">
-        <span>Step 4</span>
-        <span>Summary</span>
+      <div class="div_1">
+        <button class="circle">4</button>
+        <div class="float_right">
+          <span class="steps">Step 4</span>
+          <span class="steps_desc">Summary</span>
+        </div>
       </div>
     </div>
   </div>
     <!-- Sidebar end -->
 
     <!-- Step 1 start -->
-  <div class="container_2.1">
-    <p>Personal info <br>
-      Please provide your name, email address, and phone number.
-    </p>
-    <form class="form1" action="" method="post">
-      <p>
-        <label for="name">Name</label><br>
-        <input id="name" type="text" placeholder=" e.g. Stephen King">
-      </p>
-      <p>
-        <label for="email">Email Address</label><br>
-        <input id="email" type="text" placeholder=" e.g. stephenking@lorem.com">
-      </p>
-      <p>
-        <label for="phone">Phone Number</label><br>
-        <input id="phone" type="text" placeholder=" e.g. +1 234 567 890">
-      </p>
-      <aside class="nav_next"><input type="button" value="Next"></aside>
-    </form>
+  <div class="container_2_1">
+    <div>
+      <h2 class="title">Personal info</h2>
+      <p id="title_desc1">Please provide your name, email address, and phone number.</p>
+    </div>
+    <div class="mint_container">
+      <form class="form1" action="" method="post" required>
+        <p class="text_div">
+          <label for="name">Name</label><br>
+          <input id="name" type="text" placeholder=" e.g. Stephen King" required>
+        </p>
+        <p class="text_div">
+          <label for="email">Email Address</label><br>
+          <input id="email" type="text" placeholder=" e.g. stephenking@lorem.com">
+        </p>
+        <p class="text_div">
+          <label for="phone">Phone Number</label><br>
+          <input id="phone" type="text" placeholder=" e.g. +1 234 567 890">
+        </p>
+      </form>
+      <aside id="nav_next1">
+        <input class="go_back" type="button" value="Go back">
+        <input type="button" value="Next Step">
+      </aside>
+    </div>
   </div>
 
+
   <div class="container2_2">
-    <p> Select your plan <br>
-      You have the option of monthly or yearly billing.
-    </p>
+    <div>
+      <h2 class="title">Select your plan</h2>
+      <p id="title_desc2">You have the option of monthly or yearly billing.</p>
+    </div>
     <div id="mini_container2_2">
       <section>
-        <div class="icons">
+        <button class="icons">
           <img src="./assets/images/icon-arcade.svg">
           <p class="icons_p"> Arcade <br>
             $9/mo
           </p>
-        </div>
-        <div class="icons">
+        </button>
+        <button class="icons">
           <img src="./assets/images/icon-advanced.svg">
           <p> Advanced <br>
             $12/mo
           </p>
-        </div>
-        <div class="icons">
+        </button>
+        <button class="icons">
           <img class="icons_img" src="./assets/images/icon-pro.svg">
           <p> Pro <br>
             $15/mo
           </p>
-        </div>
+        </button>
       </section>
       <aside class="nav.go_back">
         <input type="button" value="Go Back">
@@ -107,43 +117,48 @@
 
   <div class="container2_3">
   <div>
-    <h2
-    >Pick add-ons</h2>
-    <p>Add-ons help enhance your gaming experience.</p>
+    <h2 class="title">Pick add-ons</h2>
+    <p id="title_desc3">Add-ons help enhance your gaming experience.</p>
   </div>
-    <form class="form2" action="" method="post">
-      <div class="checkbox_div">
-        <p class="float_month">+$1/mo</p>
-        <div class="small_checkbox_div">
-          <input id="service" type="checkbox">
-          <div class="labels">
-            <p>Online service</p>
-            <p>Access to multiplayer games</p>
+    <div class="mint_container3">
+      <form class="form2" action="" method="post">
+        <div class="checkbox_div">
+          <p class="float_month">+$1/mo</p>
+          <div class="small_checkbox_div">
+            <input id="service" type="checkbox">
+            <div class="labels">
+              <p class="title_desc4">Online service</p>
+              <p class="title_desc4s">Access to multiplayer games</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="checkbox_div">
-        <p class="float_month">+$2/mo</p>
-        <div class="small_checkbox_div">
-          <input id="storage" type="checkbox">
-          <div class="labels">
-            <p>Larger storage</p>
-            <p>Extra 1TB of cloud save</p>
+        <div class="checkbox_div">
+          <p class="float_month">+$2/mo</p>
+          <div class="small_checkbox_div">
+            <input id="storage" type="checkbox">
+            <div class="labels">
+              <p class="title_desc4">Larger storage</p>
+              <p class="title_desc4s">Extra 1TB of cloud save</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="checkbox_div">
-        <p class="float_month">+$2/mo</p>
-        <div class="small_checkbox_div">
-          <input id="" type="checkbox">
-          <div class="labels">
-            <p>Customizable Profile</p>
-            <p>Custom theme on your profile</p>
+        <div class="checkbox_div">
+          <p class="float_month">+$2/mo</p>
+          <div class="small_checkbox_div">
+            <input id="" type="checkbox">
+            <div class="labels">
+              <p class="title_desc4">Customizable Profile</p>
+              <p class="title_desc4s">Custom theme on your profile</p>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
-    <aside class="nav_next"><input type="button" value="Next"></aside>
+      </form>
+    <div>
+    <aside class="nav_next3">
+      <input class="go_back3" type="button" value="Go Back">
+      <input class="next_3" type="button" value="Next">
+    </aside>
+    </div>
   </div>
   </div>
 

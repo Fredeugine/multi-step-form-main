@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <script src="index.js"></script>
   <title>Frontend Mentor | Multi-step form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -21,14 +21,14 @@
   <div class="container_1">
     <div class="main_div1">
       <div class="div_1">
-        <button class="circle">1</button>
+        <button id="circle1" class="circle">1</button>
         <div class="float_right">
           <span class="steps">STEP 1</span>
           <span class="steps_desc">Your info</span>
         </div>
       </div>
       <div class="div_1">
-        <button class="circle">2</button>
+        <button id="circle2" class="circle">2</button>
         <div class="float_right">
           <span class="steps">Step 2</span>
           <span class="steps_desc">Select plan</span>
@@ -74,8 +74,7 @@
         </p>
       </form>
       <aside id="nav_next1">
-        <input class="go_back" type="button" value="Go back">
-        <input type="button" value="Next Step">
+        <input id="next1" type="button" value="Next Step">
       </aside>
     </div>
   </div>

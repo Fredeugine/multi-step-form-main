@@ -20,6 +20,10 @@
 body{
     font-size: small;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 .main_container{
     border: 1px solid black;
@@ -111,10 +115,13 @@ body{
     background-size: 100%;
     width: 16rem;
     height: auto;
+    min-height: 33rem;
     border-radius: 5px;
     border: 1px solid red;
 }
 .container_2_1{
+    display: flex;
+    flex-direction: column;
     width: 30rem;
     border: 1px solid red;
     border: 1px solid red;
@@ -134,11 +141,34 @@ body{
 }
 .container2_3{
     display: none;
+    flex-direction: column;
     width: 31rem;
     padding-right: 4rem;
     padding-left: 4rem;
     padding-top: 3.2rem;
     border: 1px solid red;
+}
+.container2_4{
+    display: none;
+    flex-direction: column;
+    width: 31rem;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: ;
+}
+.finish_up{
+    display: flex;
+    justify-content: space-between;
+}
+.finish_up_price{
+    font-weight: bold;
+}
+.finish_up_outline {
+    border: 1px solid var(--Magnolia);
+    background-color: var(--Alabaster);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .float_month{
     float: right;
@@ -178,7 +208,8 @@ body{
 }
 .title_desc4s{
     color: var(--Cool-gray);
-    font-size: x-small;
+    font-size: 0.7rem;
+
 }
 
 .small_checkbox_div input{
@@ -193,26 +224,27 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-#nav_next1 input {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    width: 28%;
-    border-radius: 0.5rem;
-    background-color: var(--Marine-blue);
-    float: right;
+.next:hover{
+    background-color: lightcoral;
 }
-.next_3{
+.next{
     padding: 0.5rem 1rem 0.5rem 1rem;
     width: 28%;
     border-radius: 0.5rem;
     background-color: var(--Marine-blue);
 }
-.nav_next3{
+.nav{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.8rem;
 }
-
+.go_back{
+    background-color: var(--White);
+    border: 0px;font-weight: bold;
+}
+#next_float{
+    visibility: hidden;
+}
 .mint_container{
     display: flex;
     flex-direction: column;
@@ -223,19 +255,9 @@ body{
     flex-direction: column;
     gap: 4.4rem;
 }
-.nav\.go_back input{
-    background-color: var(--White);
-    border: 0px;font-weight: bold;
-}
-.go_back3{
-    background-color: var(--White);
-    border: 0px;font-weight: bold;
-}
-.nav\.go_back input:hover{
-    cursor: pointer;
-}
-.nav\.go_back input:focus{
 
+.go_back input:hover{
+    cursor: pointer;
 }
 section{
     display: flex;
@@ -260,11 +282,6 @@ section{
 .icons:focus{
     background-color: var(--Magnolia);
 }
-.icons-img{
-}
-hfjjug.icons_p{
-    position: absolute;
-    top: 12rem;
-}
+
 
 

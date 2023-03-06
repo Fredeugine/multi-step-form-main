@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script src="index.js"></script>
+  <script src="index.js" ></script>
   <title>Frontend Mentor | Multi-step form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -73,8 +73,9 @@
           <input id="phone" type="text" placeholder=" e.g. +1 234 567 890">
         </p>
       </form>
-      <aside id="nav_next1">
-        <input id="next1" type="button" value="Next Step">
+      <aside class="nav">
+        <input class="go_back" id="next_float" type="button" value="Go Back">
+        <input class="next" type="button" value="Next">
       </aside>
     </div>
   </div>
@@ -89,29 +90,33 @@
       <section>
         <button class="icons">
           <img src="./assets/images/icon-arcade.svg">
-          <p class="icons_p"> Arcade <br>
-            $9/mo
-          </p>
+          <div>
+            <p class="icons_p">Arcade</p>
+            <p>$9/mo</p>
+          </div>
         </button>
         <button class="icons">
           <img src="./assets/images/icon-advanced.svg">
-          <p> Advanced <br>
-            $12/mo
-          </p>
+          <div>
+            <p>Advanced</p>
+           <p>$12/mo</p>
+          </div>
+
         </button>
         <button class="icons">
           <img class="icons_img" src="./assets/images/icon-pro.svg">
-          <p> Pro <br>
-            $15/mo
-          </p>
+          <div>
+            <p>Pro</p>
+            <p>15/mo</p>
+          </div>
         </button>
       </section>
-      <aside class="nav.go_back">
-        <input type="button" value="Go Back">
+      <aside class="nav">
+        <input class="go_back" type="button" value="Go Back">
+        <input class="next" type="button" value="Next">
       </aside>
     </div>
   </div>
-
 
 
   <div class="container2_3">
@@ -124,7 +129,7 @@
         <div class="checkbox_div">
           <p class="float_month">+$1/mo</p>
           <div class="small_checkbox_div">
-            <input id="service" type="checkbox">
+            <input class="checkboxes" id="service" type="checkbox">
             <div class="labels">
               <p class="title_desc4">Online service</p>
               <p class="title_desc4s">Access to multiplayer games</p>
@@ -134,7 +139,7 @@
         <div class="checkbox_div">
           <p class="float_month">+$2/mo</p>
           <div class="small_checkbox_div">
-            <input id="storage" type="checkbox">
+            <input class="checkboxes" id="storage" type="checkbox">
             <div class="labels">
               <p class="title_desc4">Larger storage</p>
               <p class="title_desc4s">Extra 1TB of cloud save</p>
@@ -144,7 +149,7 @@
         <div class="checkbox_div">
           <p class="float_month">+$2/mo</p>
           <div class="small_checkbox_div">
-            <input id="" type="checkbox">
+            <input class="checkboxes" id="profile" type="checkbox">
             <div class="labels">
               <p class="title_desc4">Customizable Profile</p>
               <p class="title_desc4s">Custom theme on your profile</p>
@@ -153,16 +158,51 @@
         </div>
       </form>
     <div>
-    <aside class="nav_next3">
-      <input class="go_back3" type="button" value="Go Back">
-      <input class="next_3" type="button" value="Next">
+    <aside class="nav">
+      <input class="go_back" type="button" value="Go Back">
+      <input class="next" type="button" value="Next">
     </aside>
     </div>
   </div>
   </div>
 
-
-</div>
+  <div class="container2_4">
+    <div>
+      <h2 class="title">Finishing up</h2>
+      <p> Double-check everything looks OK before confirming.</p>
+    </div>
+    <div class="finish_up_outline">
+      <div class="finish_up">
+        <div class="labels">
+          <p id="level" class="finish_up_price"></p>
+          <button id="changeButton" class="title_desc4s">change</button>
+        </div>
+        <p id = "level_price" class="finish_up_price"></p>
+      </div>
+      <hr>
+      <div class="finish_up">
+        <p class="title_desc4s"></p>
+        <p class="finish_up_price"></p>
+      </div>
+      <div class="finish_up">
+        <p class="title_desc4s"></p>
+        <p class="finish_up_price"></p>
+      </div>
+      <div class="finish_up">
+        <p class="title_desc4s"></p>
+        <p class="finish_up_price"></p>
+      </div>
+    </div>
+    <div class="finish_up">
+      <p class="title_desc4s">Total (per month)</p>
+      <p>$9/mo</p>
+    </div>
+    <aside class="nav">
+      <input class="go_back" type="button" value="Go Back">
+      <input class="next" type="submit" value="Confirm">
+    </aside>
+  </div>
+  </div>
 
 </body>
 </html>

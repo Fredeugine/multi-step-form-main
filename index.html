@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script src="index.js" ></script>
+  <script src="app.js" ></script>
   <title>Frontend Mentor | Multi-step form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,7 +15,6 @@
   </style>
 </head>
 <body>
-
   <!-- Sidebar start -->
 <div class="main_container">
   <div class="container_1">
@@ -62,15 +61,15 @@
       <form class="form1" action="" method="post" required>
         <p class="text_div">
           <label for="name">Name</label><br>
-          <input id="name" type="text" placeholder=" e.g. Stephen King" required>
+          <input class="form" id="name" type="text" placeholder=" e.g. Stephen King" required>
         </p>
         <p class="text_div">
           <label for="email">Email Address</label><br>
-          <input id="email" type="text" placeholder=" e.g. stephenking@lorem.com">
+          <input class="form" id="email" type="email" placeholder=" e.g. stephenking@lorem.com" required>
         </p>
         <p class="text_div">
           <label for="phone">Phone Number</label><br>
-          <input id="phone" type="text" placeholder=" e.g. +1 234 567 890">
+          <input class="form" id="phone" type="tel" placeholder=" e.g. +1 234 567 890" required minlength="11" maxlength="11">
         </p>
       </form>
       <aside class="nav">
@@ -86,34 +85,43 @@
       <h2 class="title">Select your plan</h2>
       <p id="title_desc2">You have the option of monthly or yearly billing.</p>
     </div>
-    <div id="mini_container2_2">
       <section>
         <button class="icons">
           <img src="./assets/images/icon-arcade.svg">
-          <div>
-            <p class="icons_p">Arcade</p>
-            <p>$9/mo</p>
+          <div class="align">
+            <p class="mode">Arcade</p>
+            <p class="price">$9/mo</p>
+            <p class="free_months">2 months free</p>
           </div>
         </button>
         <button class="icons">
           <img src="./assets/images/icon-advanced.svg">
-          <div>
-            <p>Advanced</p>
-           <p>$12/mo</p>
+          <div class="align">
+            <p class="mode">Advanced</p>
+           <p class="price">$12/mo</p>
+            <p class="free_months">2 months free</p>
           </div>
-
         </button>
         <button class="icons">
           <img class="icons_img" src="./assets/images/icon-pro.svg">
-          <div>
-            <p>Pro</p>
-            <p>15/mo</p>
+          <div class="align">
+            <p class="mode">Pro</p>
+            <p class="price">15/mo</p>
+            <p class="free_months">2 months free</p>
           </div>
         </button>
       </section>
+    <div id="mini_container2_2">
+      <div class="bull">
+        <p  class ="bull_m1">Monthly</p>
+        <div class="slider">
+          <input type="checkbox" class="toggle"></input>
+        </div>
+        <p class="bull_m2">Yearly</p>
+      </div>
       <aside class="nav">
         <input class="go_back" type="button" value="Go Back">
-        <input class="next" type="button" value="Next">
+        <input id ="next1" class="next" type="button" value="Next">
       </aside>
     </div>
   </div>
@@ -195,12 +203,20 @@
     </div>
     <div class="finish_up">
       <p class="title_desc4s">Total (per month)</p>
-      <p>$9/mo</p>
+      <p id="total">$9/mo</p>
     </div>
     <aside class="nav">
       <input class="go_back" type="button" value="Go Back">
       <input class="next" type="submit" value="Confirm">
     </aside>
+  </div>
+  <div class="container2_5">
+    <img class="img_5"src="assets/images/icon-thank-you.svg">
+    <h1 class="close_5">Thank you!</h1>
+    <p class="para_5">Thanks for confirming your subscription!
+    We hope you have fun using our platform.
+    If you ever need support, please feel free to email
+    us at support@loremgaming.com</p>
   </div>
   </div>
 
